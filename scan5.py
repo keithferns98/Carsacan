@@ -13,7 +13,9 @@ cv2.imshow('output',resized)
 #save the image
 cv2.imwrite('resized_img.jpg',resized)
 gaussain=cv2.GaussianBlur(img,(5,5),0)
+gaussain2=cv2.GaussianBlur(resized,(5,5),0)
 cv2.imshow('denoiseimg',gaussain)
+cv2.imshow('denoiseimg',gaussain2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
